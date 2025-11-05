@@ -2,8 +2,10 @@
   "name": "apliempleo",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "sass": "sass src/scss:build/css"
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp dev"
   },
   "keywords": [
     "SASS",
@@ -13,6 +15,8 @@
   "license": "ISC",
   "description": "Desarrollo de una agencia de empleo con javascript sass",
   "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
     "sass": "^1.93.3"
   }
 }
