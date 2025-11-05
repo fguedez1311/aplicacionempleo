@@ -1,15 +1,18 @@
 {
   "name": "apliempleo",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "sass": "sass src/scss:build/css"
   },
+  "keywords": [
+    "SASS",
+    "GULP"
+  ],
+  "author": "Francisco Guedez, fguedez1311@gmail.com",
+  "license": "ISC",
+  "description": "Desarrollo de una agencia de empleo con javascript sass",
   "devDependencies": {
-    "sass": "^1.93.3",
-    "vite": "^7.1.7"
+    "sass": "^1.93.3"
   }
 }
