@@ -418,7 +418,7 @@ h1 + p {
   text-decoration: none;
 }
 .header__a--header:hover, .header__a--header:focus {
-  color: #3b4550;
+  color: rgb(129, 129, 160);
   outline: none;
 }
 .hero {
