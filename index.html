@@ -32,7 +32,26 @@
     </div>
   </header>
   <main>
-    <h2>Pagina Principal</h2>
+    <section class="hero">
+        <img class="hero__img" src="./src/img/background.webp" alt="">
+        <h1 class="hero__h1">Encuentra el trabajo de tus sueños</h1>
+        <p class="hero__p">Únete a la comunidad más grande de desarrolladores y encuentra tu próxima oportunidad.</p>
+        <form class="hero__form" role="search">
+            <div class="hero__div">
+                <svg   xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                  class="hero__svg icon icon-tabler icons-tabler-outline icon-tabler-search">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                  <path d="M21 21l-6 -6" />
+                </svg>
+
+                <input class="hero__input" required type="text" placeholder="Buscar empleos por título, habilidad o empresa">
+
+                <button class="hero__button"  type="submit">Buscar</button>
+            </div>
+        </form>
+    </section>
   </main>
   <footer class="footer">
     <small class="footer__small">&copy; 2025 DevJobs. Todos los derechos reservados</small>

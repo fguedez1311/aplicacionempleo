@@ -1,10 +1,11 @@
+@use 'base/variables' as v;
 .footer{
-    background-color: var(--background);
-    border-top: 1px solid var(--border);
+    background-color: v.$background;
+    border-top: 1px solid v.$border;
     text-align: center;
     padding: 16px;
-}
-.footer__small{
-      color: var(--text-muted);
-      font-size: 1.6rem;
+    &__small{
+          color: v.$text-muted;
+          font-size: 1.6rem;
+    }
 }
