@@ -366,6 +366,7 @@ h1 + p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1rem;
   gap: 2rem;
 }
 @media (min-width: 768px) {
@@ -499,7 +500,7 @@ h1 + p {
 .objetivos {
   padding-inline: 1.6rem;
   background-color: #06182a;
-  padding-top: 2rem;
+  margin-block: 5rem;
 }
 .objetivos__header {
   display: flex;
@@ -544,6 +545,7 @@ h1 + p {
   color: #ffffff;
   margin-bottom: 1rem;
   font-weight: 500;
+  text-align: center;
 }
 .objetivos__p {
   font-size: 1.3rem;
