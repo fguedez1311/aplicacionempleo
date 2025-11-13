@@ -1,0 +1,5 @@
+@use 'base' as m;
+
+.boton-gris{
+    @include m.boton(#334155,inline-block);
+}

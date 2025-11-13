@@ -360,6 +360,21 @@ h1 + p {
   margin-bottom: 2rem;
 }
 
+.boton-gris {
+  background-color: #334155;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  display: inline-block;
+}
+.boton-gris:hover, .boton-gris:focus {
+  background-color: rgb(41.4375, 52.8125, 69.0625);
+  outline: none;
+}
+
 .header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
