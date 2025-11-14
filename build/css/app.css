@@ -373,6 +373,7 @@ h1 + p {
 .boton-gris:hover, .boton-gris:focus {
   background-color: rgb(41.4375, 52.8125, 69.0625);
   outline: none;
+  cursor: pointer;
 }
 
 .header {
