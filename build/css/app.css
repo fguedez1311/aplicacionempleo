@@ -437,6 +437,35 @@ h1 + p {
   color: rgb(129, 129, 160);
   outline: none;
 }
+.form {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+.form__div {
+  display: flex;
+  align-items: center;
+  background-color: #1e293b;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  padding: 0.7rem;
+  gap: 0.5rem;
+}
+.form__input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+}
+.form__input::placeholder {
+  color: #64748b;
+}
+
 .hero {
   height: 500px;
   text-align: center;
@@ -458,34 +487,6 @@ h1 + p {
 .hero__h1 {
   padding-top: 3rem;
   font-size: 3rem;
-}
-.hero__form {
-  max-width: 50rem;
-  width: 100%;
-  margin: 0 auto;
-  padding-inline: 1rem;
-}
-.hero__div {
-  display: flex;
-  align-items: center;
-  background-color: #1e293b;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-  padding: 0.7rem;
-  gap: 0.5rem;
-}
-.hero__input {
-  flex: 1;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #ffffff;
-  padding: 0.75rem 0.5rem;
-  font-size: 1.1rem;
-  font-family: inherit;
-}
-.hero__input::placeholder {
-  color: #64748b;
 }
 .hero__button {
   padding: 0.75rem 1.5rem;
