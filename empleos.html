@@ -50,7 +50,7 @@
                 placeholder="Buscar trabajos, empresas o habilidades">
           </div>
 
-          <div class="search-filters">
+          <div class="formulario-busqueda__filtros">
             <select name="technology" id="filter-technology">
               <option value="" disabled selected>Tecnología</option>
               <optgroup label="Tecnologías populares">
@@ -89,27 +89,51 @@
         </form>
         <span class="jobs-search__span" id="filter-selected-value"></span>
       </section>
-       <section>
-          <h2>Resultados de búsqueda</h2>
+       <section class="resultados">
+          <h2 class="resultados__h2">Resultados de búsqueda</h2>
 
-          <div class="jobs-listings">
+          <div class="resultados__jobslistings">
             <!-- Aquí se insertan los empleos dinámicamente -->
+              <article class="resultados__article">
+                    <div>
+                        <h3 class="resultados__h3">Ingeniero de Software</h3>
+                        <small class="resultados__small">Tec Solutions inc. | Remoto</small>
+                        <p class="resultados__p">
+                            Buscamos un ingeniero de Software con experiencia en desarrollo web y conocimientos en javascript react y nodejs.El candidato ideal debe ser capaz de trabajar en equipo y habilidades de comunicación
+                        </p>
+
+                    </div>
+                    <button class="button-apply-job" id="boton-importante">Aplicar</button>
+              </article>
+              <article class="resultados__article">
+                    <div>
+                        <h3 class="resultados__h3">Ingeniero de Software</h3>
+                        <small class="resultados__small">Tec Solutions inc. | Remoto</small>
+                        <p class="resultados__p">
+                            Buscamos un ingeniero de Software con experiencia en desarrollo web y conocimientos en javascript react y nodejs.El candidato ideal debe ser capaz de trabajar en equipo y habilidades de comunicación
+                        </p>
+
+                    </div>
+                    <button class="button-apply-job" id="boton-importante">Aplicar</button>
+              </article>
+              
+              
           </div>
 
-          <nav class="pagination">
-            <a href="#">
+          <nav class="resultados__pagination">
+            <a class="resultados__a" href="#">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                     <path d="M15 6l-6 6l6 6" />
                  </svg>
             </a>
-            <a class="is-active" href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">
+            <a class="resultados__a footer__small" href="#">1</a>
+            <a class="resultados__a" href="#">2</a>
+            <a class="resultados__a" href="#">3</a>
+            <a class="resultados__a" href="#">4</a>
+            <a class="resultados__a" href="#">5</a>
+            <a class="resultados__a" href="#">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                 stroke-linecap="round" stroke-linejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
