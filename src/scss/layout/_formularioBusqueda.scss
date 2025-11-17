@@ -1,7 +1,7 @@
  @use 'base/variables' as v;
  @use 'base' as m;
 
- .form{
+ .form-busqueda{
         //  * {outline: 1px solid red;}
          max-width: 50rem;
          width: 100%;
@@ -20,14 +20,12 @@
       &__svg{
             
       }
-      &__input{
+      &__input[type="text"]{
         flex: 1;
         background: transparent;
-        border: none;
-        outline: none;
         color: v.$text-primary;
         padding: 1rem 1.5rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-family: inherit;
         &::placeholder{
             color: #64748b;

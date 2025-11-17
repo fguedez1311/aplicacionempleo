@@ -33,11 +33,11 @@
   </header>
   <main>
       <section class="jobs-search">
-        <h1>Encuentra tu próximo trabajo</h1>
-        <p>Explora miles de oportunidades en el sector tecnológico.</p>
+        <h1 class="jobs-search__h1">Encuentra tu próximo trabajo</h1>
+        <p class="jobs-search__p">Explora miles de oportunidades en el sector tecnológico.</p>
 
-        <form id="empleos-search-form" role="search">
-          <div class="search-bar">
+        <form class="form-busqueda form-busqueda--avanzada" id="empleos-search-form" role="search">
+          <div class="form-busqueda__div form-busqueda__div--principal">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-search">
@@ -46,7 +46,7 @@
                 <path d="M21 21l-6 -6" />
               </svg>
 
-              <input name="search" id="empleos-search-input" required type="text"
+              <input  class="form-busqueda__input" name="search" id="empleos-search-input" required type="text"
                 placeholder="Buscar trabajos, empresas o habilidades">
           </div>
 
@@ -87,7 +87,7 @@
             </select>
           </div>
         </form>
-        <span id="filter-selected-value"></span>
+        <span class="jobs-search__span" id="filter-selected-value"></span>
       </section>
        <section>
           <h2>Resultados de búsqueda</h2>
