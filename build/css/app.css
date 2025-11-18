@@ -396,6 +396,22 @@ h1 + p {
   cursor: pointer;
 }
 
+.boton-azul {
+  background-color: #156ce6;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  display: block;
+}
+.boton-azul:hover, .boton-azul:focus {
+  background-color: rgb(18.8665338645, 97.0278884462, 206.6334661355);
+  outline: none;
+  cursor: pointer;
+}
+
 .header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
@@ -624,6 +640,9 @@ h1 + p {
 .jobs-search .form-busqueda__div--principal {
   margin-bottom: 2rem;
 }
+.jobs-search .form-busqueda__div--principal .form-busqueda__input {
+  font-size: 1.6rem;
+}
 .jobs-search .formulario-busqueda__filtros {
   display: flex;
   flex-wrap: wrap;
@@ -635,18 +654,6 @@ h1 + p {
   width: 90%;
   margin: 0 auto;
 }
-.resultados__article {
-  border-radius: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  display: flex; /* valor original */
-  flex-direction: column;
-  align-items: start;
-  gap: 1rem;
-}
-.resultados__article:last-child {
-  border-bottom: none; /* elimina la línea del último article */
-  border-radius: 0 0 1rem 1rem; /* opcional: mantiene las esquinas redondeadas del contenedor */
-}
 .resultados__h2 {
   text-align: center;
   margin-top: 3rem;
@@ -657,11 +664,18 @@ h1 + p {
 }
 .resultados__article {
   border-radius: 0;
+  padding: 1.6rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex; /* valor original */
-  flex-direction: column;
   align-items: start;
   gap: 1rem;
+}
+.resultados__article:last-child {
+  border-bottom: none; /* elimina la línea del último article */
+  border-radius: 0 0 1rem 1rem; /* opcional: mantiene las esquinas redondeadas del contenedor */
+}
+.resultados__h3 {
+  margin: 0;
 }
 .resultados__small {
   font-size: 1rem;

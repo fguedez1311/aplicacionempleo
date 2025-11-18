@@ -3,3 +3,6 @@
 .boton-gris{
     @include m.boton(#334155,inline-block);
 }
+.boton-azul{
+    @include m.boton(#156ce6,block);
+}
