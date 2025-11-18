@@ -25,10 +25,17 @@
         background: transparent;
         color: v.$text-primary;
         padding: 1rem 1.5rem;
-        font-size: 1rem;
+        
         font-family: inherit;
         &::placeholder{
+            font-size: .95rem;
             color: #64748b;
+        }
+        @include m.tablet {
+          &::placeholder{
+            font-size: 1.6rem;
+            
+        }
         }
       }
  }

@@ -54,7 +54,12 @@
          padding: 1.6rem;
          border-bottom: 1px solid rgba(255, 255, 255, .3);
          display: flex; /* valor original */
-         align-items: start;
+         flex-direction: column;
+         @include m.tablet {
+            flex-direction: row;
+            align-items: start;
+         }
+
          gap: 1rem;
          &:last-child{
             border-bottom: none; /* elimina la línea del último article */

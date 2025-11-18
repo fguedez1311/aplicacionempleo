@@ -493,11 +493,16 @@ h1 + p {
   background: transparent;
   color: #ffffff;
   padding: 1rem 1.5rem;
-  font-size: 1rem;
   font-family: inherit;
 }
 .form-busqueda__input[type=text]::placeholder {
+  font-size: 0.95rem;
   color: #64748b;
+}
+@media (min-width: 768px) {
+  .form-busqueda__input[type=text]::placeholder {
+    font-size: 1.6rem;
+  }
 }
 
 .hero {
@@ -667,7 +672,15 @@ h1 + p {
   padding: 1.6rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex; /* valor original */
-  align-items: start;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .resultados__article {
+    flex-direction: row;
+    align-items: start;
+  }
+}
+.resultados__article {
   gap: 1rem;
 }
 .resultados__article:last-child {
