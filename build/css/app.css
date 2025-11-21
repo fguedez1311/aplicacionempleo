@@ -628,15 +628,25 @@ h1 + p {
   height: auto;
 }
 .jobs-search__h1 {
-  font-size: 3rem;
+  font-size: 1.6rem;
   margin-bottom: 0.25rem;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .jobs-search__h1 {
+    font-size: 3rem;
+  }
+}
 .jobs-search__p {
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: var(--text-muted);
   margin-bottom: 1.5rem;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .jobs-search__p {
+    font-size: 2rem;
+  }
 }
 .jobs-search .form-busqueda--avanzada {
   width: 100%;
@@ -664,6 +674,8 @@ h1 + p {
   margin-top: 3rem;
 }
 .resultados__jobslistings {
+  max-width: 1200px;
+  margin: 0 auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 1rem;
 }
@@ -678,6 +690,11 @@ h1 + p {
   .resultados__article {
     flex-direction: row;
     align-items: start;
+  }
+}
+@media (min-width: 1400px) {
+  .resultados__article {
+    flex-direction: column;
   }
 }
 .resultados__article {
