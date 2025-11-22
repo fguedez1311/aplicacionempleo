@@ -340,6 +340,12 @@ body {
   line-height: 1.6;
 }
 
+.contenedor {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 select {
   padding: 1rem 1.5rem;
   background-color: #242d3a;
@@ -386,12 +392,13 @@ h1 + p {
   font-weight: bold;
   text-decoration: none;
   padding: 1rem 3rem;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
+  border: none;
   text-align: center;
   display: inline-block;
 }
 .boton-gris:hover, .boton-gris:focus {
-  background-color: rgb(41.4375, 52.8125, 69.0625);
+  background-color: rgb(31.875, 40.625, 53.125);
   outline: none;
   cursor: pointer;
 }
@@ -402,12 +409,13 @@ h1 + p {
   font-weight: bold;
   text-decoration: none;
   padding: 1rem 3rem;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
+  border: none;
   text-align: center;
   display: block;
 }
 .boton-azul:hover, .boton-azul:focus {
-  background-color: rgb(18.8665338645, 97.0278884462, 206.6334661355);
+  background-color: rgb(16.7330677291, 86.0557768924, 183.2669322709);
   outline: none;
   cursor: pointer;
 }
@@ -639,7 +647,7 @@ h1 + p {
 }
 .jobs-search__p {
   font-size: 1.3rem;
-  color: var(--text-muted);
+  color: #94a3b8;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -741,4 +749,69 @@ h1 + p {
   background-color: #09f;
   color: white;
   pointer-events: none;
+}
+.detalleOferta__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .detalleOferta__header {
+    display: block;
+    text-align: left;
+  }
+}
+.detalleOferta__h2 {
+  font-size: 1.6rem;
+  margin-block: 3rem;
+}
+.detalleOferta__span {
+  color: #94a3b8;
+}
+.detalleOferta__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .detalleOferta__div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+.detalleOferta__h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+.detalleOferta__p {
+  margin-top: 0;
+}
+.detalleOferta__div--content .detalleOferta__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detalleOferta__div--content .detalleOferta__div .detalleOferta__p {
+  color: #94a3b8;
+}
+@media (min-width: 768px) {
+  .detalleOferta__div--content .detalleOferta__div {
+    align-items: start;
+  }
+}
+.detalleOferta__ul {
+  list-style-type: none;
+  list-style-image: url("../../src/img/flecha.svg");
+}
+.detalleOferta__footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .detalleOferta__footer {
+    justify-content: right;
+  }
 }

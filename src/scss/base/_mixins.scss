@@ -34,11 +34,12 @@
     font-weight: bold;
     text-decoration: none;
     padding: 1rem 3rem;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
+    border: none;
     text-align: center;
     display: $display;
     &:hover, &:focus {
-                background-color: color.adjust($bgColor, $lightness: -5%);
+                background-color: color.adjust($bgColor, $lightness: -10%);
                 outline: none;
                 cursor:pointer;
     }

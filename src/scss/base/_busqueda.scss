@@ -15,7 +15,7 @@
     }
     &__p{
         font-size: 1.3rem;
-        color: v.$text-muted;
+        color: var(--text-muted);
         margin-bottom: 1.5rem;
         text-align: center;
          @include m.tablet{
