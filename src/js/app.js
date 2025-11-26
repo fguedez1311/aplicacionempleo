@@ -1,5 +1,11 @@
-const boton=document.querySelector('#boton-importante')
-boton.addEventListener('click',()=>{
-    alert('Gracias por tu interes. Proto nos pondremos en contacto contigo.')
+const botones=document.querySelectorAll('.button-apply-job')
+console.log(botones)
+botones.forEach(boton=>{
+    boton.addEventListener('click',()=>{
+        boton.textContent="Aplicado!"
+        boton.classList.add('is-applied')
+        boton.disabled=true
+    })
+
 })
 

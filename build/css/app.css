@@ -750,8 +750,12 @@ h1 + p {
   color: white;
   pointer-events: none;
 }
-#boton-importante {
-  background-color: #09f;
+.button-apply-job {
+  background: #09f;
+}
+.button-apply-job.is-applied {
+  background: #4caf50;
+  pointer-events: none;
 }
 
 .detalleOferta__header {

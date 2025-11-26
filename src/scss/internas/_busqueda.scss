@@ -124,6 +124,11 @@
     
     
 }
-#boton-importante{
-    background-color: #09f;
+
+.button-apply-job{
+    background: #09f;
+   &.is-applied{
+     background: #4caf50;
+     pointer-events:none;
+   }
 }
