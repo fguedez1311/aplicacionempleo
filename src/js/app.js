@@ -16,3 +16,25 @@ jobsListingSection.addEventListener('click',function(event){
         console.log('Es el botón')
     }
 })
+
+// Eventos de los filtros
+
+const filter=document.querySelector('#filter-technology')
+
+filter.addEventListener('change',function(){
+    console.log(filter.value)
+})
+
+// Filtros por ubicación
+
+const filter_ubicacion=document.querySelector('#filter-location')
+filter_ubicacion.addEventListener('change',function(){
+    const tipo_localidad=filter_ubicacion.value
+    console.log(tipo_localidad)
+    const etiquetasSmall=document.querySelectorAll(".resultados__article .resultados__small")
+    etiquetasSmall.forEach((small)=>{
+        console.log(small.textContent.toLocaleLowerCase().includes(tipo_localidad))
+        // if(small.textContent.toLocaleLowerCase().contains(tipo_localidad))
+        //     console.log(small.innerHTML)
+    })
+})
