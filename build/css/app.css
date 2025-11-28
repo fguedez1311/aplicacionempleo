@@ -710,7 +710,10 @@ h1 + p {
 }
 .resultados__article:last-child {
   border-bottom: none; /* elimina la línea del último article */
-  border-radius: 0 0 1rem 1rem; /* opcional: mantiene las esquinas redondeadas del contenedor */
+  border-radius: 0 0 1rem 1rem; /* opcional: manpm run nntiene las esquinas redondeadas del contenedor */
+}
+.resultados__article--desaparece {
+  display: none;
 }
 .resultados__h3 {
   margin: 0;

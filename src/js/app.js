@@ -29,12 +29,19 @@ filter.addEventListener('change',function(){
 
 const filter_ubicacion=document.querySelector('#filter-location')
 filter_ubicacion.addEventListener('change',function(){
-    const tipo_localidad=filter_ubicacion.value
-    console.log(tipo_localidad)
-    const etiquetasSmall=document.querySelectorAll(".resultados__article .resultados__small")
-    etiquetasSmall.forEach((small)=>{
-        console.log(small.textContent.toLocaleLowerCase().includes(tipo_localidad))
-        // if(small.textContent.toLocaleLowerCase().contains(tipo_localidad))
-        //     console.log(small.innerHTML)
-    })
+    let tipo_localidad=filter_ubicacion.value
+    tipo_localidad=tipo_localidad==="cdmx" ? "mexico":tipo_localidad
+    // console.log(tipo_localidad)
+    // debugger
+    const articles=document.querySelectorAll(".resultados__article")
+    articles.forEach(article=>{
+        const etiquetasSmall= article.children[0].children[1]
+        if(!(etiquetasSmall.textContent.toLocaleLowerCase().includes(tipo_localidad))){
+            article.classList.add('resultados__article--desaparece')  
+
+         } 
+     })
+    
+    
+        
 })
