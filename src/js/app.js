@@ -11,14 +11,10 @@ filter.addEventListener('change',function(){
         mensaje.textContent=''
     }
     jobs.forEach(job=>{
-    const modalidad= job.dataset.modalidad
-    if(seletecValue==='' || seletecValue===modalidad){
-        job.classList.remove('is-hidden')
-    }
-    else{
-       job.classList.add('is-hidden')
-    }
-})
+        const modalidad= job.dataset.modalidad
+        const isShown=seletecValue==='' || seletecValue===modalidad
+        job.classList.toggle('is-hidden',isShown===false)
+    })
 })
 
 
