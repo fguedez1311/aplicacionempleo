@@ -712,6 +712,9 @@ h1 + p {
   border-bottom: none; /* elimina la línea del último article */
   border-radius: 0 0 1rem 1rem; /* opcional: mantiene las esquinas redondeadas del contenedor */
 }
+.resultados__article.is-hidden {
+  display: none;
+}
 .resultados__h3 {
   margin: 0;
 }
