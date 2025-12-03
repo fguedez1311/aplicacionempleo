@@ -18,4 +18,16 @@ filter.addEventListener('change',function(){
 })
 
 
+console.log("Antes del fetch")
 
+fetch("build/data/data.json") //fetch es asincrono
+    .then((response)=>{
+        return response.json()
+    })
+    .then((jobs)=>{
+        console.log('Tengo los resultados del fetch')
+        console.log(jobs)
+    })
+
+    console.log('Seguir viendo la tele')
+    console.log('jugar a la ps5')
