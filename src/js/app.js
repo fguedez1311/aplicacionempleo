@@ -1,7 +1,8 @@
 const filter=document.querySelector("#filter-location")
 const mensaje=document.querySelector('#filter-selected-value')
-const jobs=document.querySelectorAll('.resultados__article')
+
 filter.addEventListener('change',function(){
+    const jobs=document.querySelectorAll('.resultados__article')
     const seletecValue=filter.value
     if(seletecValue){
         mensaje.textContent=`Has Seleccionado: ${seletecValue}`
@@ -18,16 +19,32 @@ filter.addEventListener('change',function(){
 })
 
 
-console.log("Antes del fetch")
-
+const container=document.querySelector('.resultados__jobslistings')
 fetch("/src/data/data.json") //fetch es asincrono
     .then((response)=>{
         return response.json()
     })
     .then((jobs)=>{
-        console.log('Tengo los resultados del fetch')
-        console.log(jobs)
+        jobs.forEach(job=>{
+            const article=document.createElement('article')
+            article.className='resultados__article'
+            article.dataset.modalidad=job.data.modalidad
+            article.dataset.nivel=job.data.nivel
+            article.dataset.technology=job.data.technology
+            article.innerHTML=`
+                    <div>
+                        <h3 class="resultados__h3">${job.titulo}</h3>
+                        <small class="resultados__small">${job.empresa} | ${job.ubicacion}</small>
+                        <p class="resultados__p">
+                            ${job.descripcion}
+                        </p>
+
+                    </div>
+                    <button class="boton-azul">Aplicar</button>  
+            `
+            container.appendChild(article)
+        })
+       
     })
 
-    console.log('Seguir viendo la tele')
-    console.log('jugar a la ps5')
+    
