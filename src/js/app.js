@@ -20,7 +20,7 @@ filter.addEventListener('change',function(){
 
 console.log("Antes del fetch")
 
-fetch("build/data/data.json") //fetch es asincrono
+fetch("/src/data/data.json") //fetch es asincrono
     .then((response)=>{
         return response.json()
     })
