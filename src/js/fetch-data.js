@@ -24,6 +24,8 @@ fetch("/src/data/data.json") //fetch es asincrono
             `
             container.appendChild(article)
         })
+        // Emitir evento para indicar que los datos fueron cargados
+        document.dispatchEvent(new CustomEvent('data:loaded'))
        
     })
 

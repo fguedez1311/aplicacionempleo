@@ -22,4 +22,6 @@ function filterJobs() {
         const shouldShow = matchesModalidad && matchesTitulo
         job.classList.toggle('is-hidden', !shouldShow)
     })
+    // Informar a la paginación que los filtros cambiaron (reset de página)
+    document.dispatchEvent(new CustomEvent('filters:changed'))
 }
